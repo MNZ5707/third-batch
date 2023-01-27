@@ -1,0 +1,10 @@
+<div [ngSwitch]="fruits">
+    
+    <p *ngSwitchCase="'Orange'" style="background-color: red;">This is Orange</p>
+    <p *ngSwitchCase="'Apple'"  style="background-color: blue;">This is Apple</p>
+    <p *ngSwitchCase="'Grape'"  style="background-color: green;">This is Grape</p>
+    <p *ngSwitchDefault>There is no Fruits</p>
+    </div>
+
+
+<button *ngFor="let i of Array" (click)="loop(i)">{{i}}</button>

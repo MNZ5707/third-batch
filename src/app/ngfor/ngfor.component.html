@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Department</th>
+        </tr>
+    </thead>
+    <tbody  *ngFor="let i of Data">
+        <tr *ngIf="i.dept=='MCA' && i.name=='Athul' ">
+
+            <td>{{i.id}}</td>
+            <td>{{i.name}}</td>
+            <td>{{i.dept}}</td>
+
+        </tr>
+    </tbody>
+</table>

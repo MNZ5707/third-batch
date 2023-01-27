@@ -1,0 +1,6 @@
+<p>This Is parent Component</p>
+<input type="text" [(ngModel)]="Abc">
+<button (click)="toggle()">click</button>
+<app-child *ngIf="open" [parent]="Abc" >
+    <h1 #content>This is inside the selector</h1>
+</app-child>

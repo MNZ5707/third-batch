@@ -1,0 +1,29 @@
+
+<table border="1px">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Salary</th>
+         
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let i of data" >
+        <tr >
+
+            <td [class.select]="select(i.id)">{{i.id}}</td>
+            <td>{{i.name }}</td>
+            <td>{{i.salary }}</td>
+          
+            <td><button (click)="viewList(i.id)" >view</button></td>
+
+
+        </tr>
+    </tbody>
+</table>
+
+<button (click)="viewList('hello')">hello</button>
+<button (click)="viewList('hi')">hi</button>
+<button (click)="viewList('huu')">huu</button>
+

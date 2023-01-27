@@ -1,0 +1,13 @@
+<form #userform="ngForm" (ngSubmit)="postData(userform.value)">
+    <input type="text" name="name" ngModel placeholder="Enter Your Name"><br><br><br>
+    <input type="number" name="age" ngModel placeholder="Enter Your Age"><br><br><br>
+    <div ngModelGroup="user login">
+        <input type="email" name="email" ngModel placeholder="Enter Your Email"><br><br><br>
+    <input type="password" name="password" ngModel placeholder="Enter Your password"><br><br><br>
+    </div>
+    <input type="submit">
+</form>
+
+
+<!-- <input type="text" #abc>
+<button (click)="asd(abc)">click</button> -->

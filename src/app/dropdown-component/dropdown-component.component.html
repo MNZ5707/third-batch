@@ -1,0 +1,19 @@
+<button (click)="abc('dd1')" >click DD1</button>
+<button (click)="abc('dd2')">DD2</button>
+<button (click)="abc('extra')" >Extra</button>
+
+<app-dropdown-one *ngIf="options=='dd1'"></app-dropdown-one>
+<app-dropdown-two *ngIf="options=='dd2'"></app-dropdown-two>
+<app-dropdownone *ngIf="options=='extra'"></app-dropdownone>
+
+
+
+
+
+
+
+<!-- <div class="container" *ngIf="open">
+    <p>hello world</p>
+</div> -->
+
+

@@ -1,0 +1,40 @@
+{
+  "user": [
+    {
+      "name": "mnz",
+      "age": 24,
+      "user login": {
+        "email": "muneeskarakkad62@gmail.com",
+        "password": "78"
+      },
+      "id": 1
+    },
+    {
+      "name": "mnz",
+      "age": 24,
+      "user login": {
+        "email": "muneeskarakkad62@gmail.com",
+        "password": "78"
+      },
+      "id": 2
+    },
+    {
+      "name": "mnz",
+      "age": 24,
+      "user login": {
+        "email": "muneeskarakkad62@gmail.com",
+        "password": "78"
+      },
+      "id": 4
+    },
+    {
+      "name": "mnz",
+      "age": 24,
+      "user login": {
+        "email": "muneeskarakkad62@gmail.com",
+        "password": "78"
+      },
+      "id": 5
+    }
+  ]
+}

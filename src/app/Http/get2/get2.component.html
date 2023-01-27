@@ -1,0 +1,26 @@
+<table border="1px">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let i of data" >
+        <tr>
+
+            <td>{{i.id}}</td>
+            <td>{{i.name }}</td>
+            <td>{{i.age }}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.password}}</td>
+            <td><button (click)="deleteData(i.id)">Delete</button></td>
+
+
+        </tr>
+    </tbody>
+</table>
+
