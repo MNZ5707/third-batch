@@ -1,0 +1,17 @@
+.a{
+    background-color: antiquewhite;
+}
+.b{
+    background-color: lightblue;
+}
+.c{
+    background-color: lightcoral;
+}
+.d{
+    background-color: lightgreen;
+}
+.container{
+    height: 300px;
+    width: 500px;
+    
+}

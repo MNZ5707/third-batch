@@ -1,0 +1,41 @@
+<div>
+    <span matBadge="10" >Messages</span>
+</div>
+<div>
+    <span matBadge="10" matBadgePosition="above before" >Messages</span>
+</div>
+<div>
+    <span matBadge="10" matBadgePosition="below before" >Messages</span>
+</div>
+<div>
+    <span matBadge="10" matBadgePosition="below after" >Messages</span>
+</div>
+<div>
+    <span matBadge="10" matBadgeSize="small" >Messages</span>
+</div>
+<div>
+    <span matBadge="10" matBadgeSize="medium" >Messages</span>
+</div>
+<div>
+    <span matBadge="10" matBadgeSize="large" >Messages</span>
+</div>
+
+<div>
+    <span matBadge="10" matBadgeSize="small" matBadgeColor="primary" >Messages</span>
+</div>
+<div>
+    <span matBadge="10" matBadgeSize="small" matBadgeColor="accent" >Messages</span>
+</div>
+<div>
+    <span matBadge="10" matBadgeSize="small" matBadgeColor="warn" >Messages</span>
+</div>
+
+<div>
+    <span matBadge="10" matBadgeSize="large" matBadgeOverlap="false" >Messages</span>
+</div>
+
+<div>
+    <span [matBadge]="message" matBadgePosition="above after" [matBadgeHidden]="message==0" (click)="abc()" >Messages</span>
+</div>
+
+<mat-icon matBadge="25" matBadgeColor="warn" matBadgeOverlap="false">delete</mat-icon>

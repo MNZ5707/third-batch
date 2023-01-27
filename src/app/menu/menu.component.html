@@ -1,0 +1,27 @@
+
+<button mat-button [matMenuTriggerFor]="menu" class="a" >Menu </button>
+
+<mat-menu #menu="matMenu" >
+    <button mat-menu-item [matMenuTriggerFor]="submenu">Fruits</button>
+    <button mat-menu-item>Vegitables</button>
+</mat-menu>
+
+<mat-menu #submenu="matMenu" xPosition="before" yPosition="above" > 
+    <button mat-menu-item>Apple</button>
+    <button mat-menu-item>orange</button>
+    <button mat-menu-item>Grape</button>
+    
+</mat-menu>
+
+<mat-menu #User="matMenu">
+    <ng-template matMenuContent let-i="name" let-j="hobby">
+    <button mat-menu-item>Name {{i}}</button>
+    <button mat-menu-item>Hobby is {{j}} </button>
+    <button mat-menu-item>Logout</button>
+    </ng-template>
+
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="User" [matMenuTriggerData]="{name:'Athul',hobby:'cricket'}" ><mat-icon>menu</mat-icon> </button>
+<button mat-button [matMenuTriggerFor]="User" [matMenuTriggerData]="{name:'Basim',hobby:'football'}" >Basim </button>
+<button mat-button [matMenuTriggerFor]="User" [matMenuTriggerData]="{name:'Thasneem',hobby:'Movies'}" >Thasneem </button>

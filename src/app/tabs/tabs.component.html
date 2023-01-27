@@ -1,0 +1,9 @@
+<mat-tab-group #tabs mat-stretch-tabs="false" mat-align-tabs="start" animationDuration="500ms">
+    <mat-tab label="Tab 1" >This Is Tab One</mat-tab>
+    <mat-tab label="Tab 2" >This Is Tab Two</mat-tab>
+    <mat-tab label="Tab 3" >This Is Tab Three</mat-tab>
+</mat-tab-group>
+
+{{tabs.selectedIndex}}
+
+(selectedIndexChange)="abc(tabs.selectedIndex)"

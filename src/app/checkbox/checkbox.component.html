@@ -1,0 +1,7 @@
+<mat-checkbox>FootBall</mat-checkbox><br>
+<mat-checkbox labelPosition="before">Cricket</mat-checkbox>
+<br><br>
+
+<mat-checkbox (change)="SelectAll($event)">Select All</mat-checkbox><br><br>
+
+<mat-checkbox *ngFor="let i of check" [(ngModel)]="i.checked">{{i.name}}</mat-checkbox>

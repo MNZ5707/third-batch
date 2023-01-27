@@ -1,0 +1,9 @@
+<mat-button-toggle #abc>Click</mat-button-toggle>{{abc.checked}}
+
+<br>
+<mat-button-toggle-group   #group="matButtonToggleGroup" multiple>
+    <mat-button-toggle value="Cricket">Cricket</mat-button-toggle>
+    <mat-button-toggle value="football">football</mat-button-toggle>
+    <mat-button-toggle value="Hokey">Hokey</mat-button-toggle>
+</mat-button-toggle-group>
+{{group.value}}

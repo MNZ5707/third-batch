@@ -1,0 +1,46 @@
+<div class="container">
+    <form #userForm="ngForm" (ngSubmit)="data(userForm)">
+       
+    
+       
+        <h1>
+            Sign Up Form
+            
+        </h1>
+        <input type="text" #fname="ngModel"  name="fname" [(ngModel)]="UserModel.fname"
+         class="inp" [class.error]="fname.invalid && fname.touched" placeholder="Enter Your First Name" required>
+         
+        <small class="red" *ngIf="fname.invalid && fname.touched">First name Is requierd</small>
+
+        <input type="text" #lname="ngModel" name="lname" [(ngModel)]="UserModel.lname"
+          class="inp" [class.error]="lname.invalid && lname.touched" placeholder="Enter Your Last Name" required>
+          <small class="red" *ngIf="lname.invalid && lname.touched">Last name Is requierd</small>
+
+        <input type="number" name="age" [(ngModel)]="UserModel.age"
+          class="inp" #age="ngModel" [class.error]="age.invalid && age.touched" placeholder="Enter Your Age" required>
+          <small class="red" *ngIf="age.invalid && age.touched">Age Is requierd</small>
+
+        <input type="number" name="phone" #phone="ngModel" [(ngModel)]="UserModel.phone" pattern="[6-9]{1}[0-9]{9}"
+          class="inp" [class.error]="phone.invalid && phone.touched" placeholder="Enter Your Phone Number" required>
+
+          <small class="red" *ngIf="phone.errors?.['required'] && phone.touched">Phone Number Is requierd</small>
+
+          <small class="red" *ngIf="phone.errors?.['pattern'] && phone.touched">Invalid Phone Number</small>
+
+        <input type="email" name="email" #email="ngModel" email  [(ngModel)]="UserModel.email" 
+         class="inp"  [class.error]="email.invalid && email.touched"  placeholder="Enter Your Email Address" required>
+
+         <small class="red" *ngIf="email.errors?.['required'] && email.touched">Email Is requierd</small>
+
+         <small class="red" *ngIf="email.errors?.['email'] && email.touched">Invalid Email Address</small>
+
+        <input type="password" name="password" #password="ngModel" [(ngModel)]="UserModel.password" minlength="8" maxlength="15"
+         class="inp"  [class.error]="password.invalid && password.touched" placeholder="Enter Your Password" required>
+
+         <small class="red" *ngIf="password.errors?.['required'] && password.touched">Password Is requierd</small>
+
+         <small class="red" *ngIf="password.errors?.['minlength'] && password.touched">Minimum should Be 8 Digits</small>
+
+        <input type="submit" class="inp sub" [disabled]="userForm.invalid" >
+    </form>
+</div>

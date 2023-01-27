@@ -1,0 +1,33 @@
+<div class="container">
+    <form [formGroup]="UserData" (ngSubmit)="formdata(UserData.value)">
+        <h1>
+            Sign Up Form
+        </h1>
+        <div formGroupName="Name">
+            <input type="text" class="inp" [class.error]="UserData.get('fname')?.invalid && UserData.get('fname')?.touched " 
+        formControlName="fname" 
+         placeholder="Enter Your First Name" >
+
+        <input type="text" [class.error]="UserData.get('lname')?.invalid && UserData.get('lname')?.touched " 
+         class="inp" formControlName="lname" placeholder="Enter Your Last Name">
+        </div>
+
+
+        <input type="number" class="inp" formControlName="age" [class.error]="FormControls.age.invalid && FormControls.age.touched"
+         placeholder="Enter Your Age">
+
+
+        <input type="number" class="inp" [class.error]="UserData.get('phone')?.invalid &&UserData.get('phone')?.touched"
+         formControlName="phone" 
+         placeholder="Enter Your Phone number">
+
+        <input type="email" class="inp" [class.error]="FormControls.email.invalid && FormControls.email.touched"
+         formControlName="email" placeholder="Enter Your Email Address">
+        <input type="password" class="inp" formControlName="password"
+        [class.error]="FormControls.password.invalid && FormControls.password.touched"
+        placeholder="Enter Your Password">
+
+        <input type="submit" class="inp sub">
+        <!-- <button (click)="loadValue()">Set Value</button> -->
+    </form>
+</div>

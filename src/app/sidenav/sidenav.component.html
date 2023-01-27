@@ -1,0 +1,14 @@
+<mat-sidenav-container>
+    <mat-sidenav [(opened)]="abc" mode="side" #side>Side Nav
+
+        <mat-icon (click)="side.close()">close</mat-icon>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <h1>Hello world How Are you</h1>
+        <button (click)="abc=!abc">click</button>
+        <button (click)="side.open()">open</button>
+        <button (click)="side.toggle()">Toggle</button>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- mode= push ,side ,over  -->

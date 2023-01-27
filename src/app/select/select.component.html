@@ -1,0 +1,18 @@
+<mat-form-field>
+    <mat-label>Department</mat-label>
+    <mat-select [(value)]="abc" multiple>
+        <mat-option>none</mat-option>
+       <mat-optgroup label="UG">
+        <mat-option value="CS">BSC CS</mat-option>
+        <mat-option value="BCA">BCA</mat-option>
+        <mat-option value="Bcom">Bcom</mat-option>
+       </mat-optgroup>
+       <mat-optgroup label="PG">
+        <mat-option value="CS">MSC CS</mat-option>
+        <mat-option value="MCA">MCA</mat-option>
+        <mat-option value="Mcom">Mcom</mat-option>
+       </mat-optgroup>
+
+    </mat-select>
+</mat-form-field>
+{{abc}}

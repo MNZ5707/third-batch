@@ -1,0 +1,9 @@
+<mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput type="text" [matAutocomplete]="autoCom">
+    <mat-autocomplete #autoCom="matAutocomplete">
+        <mat-option *ngFor="let i of name" [value]="i">
+            {{i}}
+        </mat-option>
+    </mat-autocomplete>
+</mat-form-field>
